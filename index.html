@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zakaria Soliman - IFT 3150</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="index.html">Zakaria Soliman</a>
+        </h1>
+        <small>zakaria.soliman [AT] umontreal [DOT] ca</small>
+        <h2>Projet IFT 3150 sous la direction de Sylvie Hamel</h2>
+        <nav>
+            <a href="#description">Description du projet</a>
+            <!--<a href="#schedule">Plan</a>-->
+            <a href="#project_milestones">Rapport de progrès</a>
+            <a href="#final_report">Rapport final</a>
+        </nav>
+    </header>
+
+    <section id="small_description">
+        <h1>Enoncé et informations</h1>
+        <p>Étude de l'ensemble de permutations médianes d'un ensemble de permutations donnée</p>
+
+        <h4>Responsable</h4>
+        <p>
+            <a href="http://www.iro.umontreal.ca/~hamelsyl/">Sylvie Hamel</a>
+        </p>
+        <p>Bureau: 3161</p>
+        <p>Téléphone: 1 514 343-6111 (3504)</p>
+        <p>hamelsyl [AT] iro [DOT] umontreal [DOT] ca</p>
+    </section>
+
+    <section id="description">
+       <h1>Description du projet</h1>
+        <p>Nous allons commencer par quelque définitions</p>
+        <h2>Définitions et Notations</h2>
+        <ul>
+            <li>Une <b>permutation</b> p de taille n est une bijection de l'ensemble {1,2,3,...,n} vers lui meme.</li>
+            <li>On definit l'ensemble A := {p | p est une permutations}.</li>
+            <li>On note S_n, l'espace (ou l'univers) de permutations de taille n.</li>
+            <li>La <b>distance Kendall-Tau</b> entre deux permutations p1 et p2, d_KT(p1, p2), est le nombre de désaccords pour chaque paires (p_1[i],p_2[j]).</li>
+            <li>On note la distance entre une permutation p et un ensemble de permutation A d_KT(p,A) = somme pout tout permutation p' dans A d_KT(p,p')</li>
+            <li>Une <b>permutation médianes</b> p* et une permutation tel que d_KT(p*, A) = min d_KT(p, A) pour tout p dans S_n</li>
+            <li>On definit M(A) := {p | p est une permutaiton mediane de l'ensemble A}</li>
+        </ul>
+        <h2>Problème</h2>
+        <p>Étant donné un ensemble de m permutations nous voulons trouver sont ensemble médiane M(A). Or le problème a été montrée NP difficile pour les cas pairs où m >= 4.</p>
+        <p>Le projet consiste à explorer les propriétés des ensembles médians M(A) par rapport
+        à l'ensemble A pour tenter de trouver des instances du problème ou il serait facile d'efficacement calculer l'ensemble M(A).</p>
+    </section>
+
+    <section id="project_milestones">
+        <h1>Rapport de progrès</h1>
+        <ol>
+            <li id="milestone_week_1">
+                <h3>Semaine du 12 janvier 2014</h3>
+                <ul>
+                    <li>Rencontre avec le professeur, les grandes lignes du projet sont établie.</li>
+                </ul>
+            </li>
+            <li id="milestone_week_2">
+                <h3>Semaine du 19 janvier 2014</h3>
+                <ul>
+                    <li>Travail sur le site web du projet.</li>
+                </ul>
+            </li>
+            <li id="milestone_week_3">
+                <h3>Semaine du 26 janvier 2014</h3>
+                <ul>
+                    <li>Finir le development du site web du projet.</li>
+                    <li>Modification des scripts qu'on utilise pour améliorer la visualisation des données.</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+</body>
+</html>
